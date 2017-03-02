@@ -7,7 +7,10 @@ var count=0;
 function onClick()
 {
 	count++;
-	document.getElementById("btn").value=String(count)+" Click(s)";
+	if(count==1)
+		document.getElementById("btn").value=String(count)+" Click";
+	else
+		document.getElementById("btn").value=String(count)+" Clicks";
 }
 </script>
 <body>
