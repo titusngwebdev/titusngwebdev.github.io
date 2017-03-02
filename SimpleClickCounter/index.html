@@ -1,1 +1,21 @@
-
+<html>
+<title>
+Click Counter
+</title>
+<script>
+var count=0;
+function onClick()
+{
+	count++;
+	if(count==1)
+		document.getElementById("btn").value=String(count)+" Click";
+	else
+		document.getElementById("btn").value=String(count)+" Clicks";
+}
+</script>
+<body>
+<div style="text-align: center;">
+   <input id="btn" type="button" value="Click Me" onClick="onClick()" style="font-size: 200% ;background-color: #ABCD10; text-align: center; width: 50%; height: 50%;">
+</div>
+</body>
+</html>
