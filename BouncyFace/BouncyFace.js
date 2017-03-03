@@ -12,6 +12,6 @@ app.ticker.add(function(delta) {
     face.y += yvel * delta;
   if(face.x<0||face.x>app.renderer.width)
     xvel*=-1;
-  if(face.y<0||face.y>app.renderer.width)
+  if(face.y<0||face.y>app.renderer.height)
     yvel*=-1;
 });
