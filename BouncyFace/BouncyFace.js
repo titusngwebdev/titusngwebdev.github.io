@@ -15,3 +15,12 @@ app.ticker.add(function(delta) {
     if(face.y<face.height/2||face.y>app.renderer.height-face.height/2)
         yvel*=-1;
 });
+app.stage.interactive=true;
+app.stage.on('pointerdown', onClick);
+function onClick()
+{
+    xvel=Math.random()*3+1;
+    yvel=Math.random()*3+1;
+    face.x = app.renderer.width / 2;
+    face.y = app.renderer.height / 2;
+}
