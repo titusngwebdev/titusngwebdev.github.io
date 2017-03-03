@@ -7,7 +7,7 @@ face.anchor.set(0.5);
 face.x = app.renderer.width / 2;
 face.y = app.renderer.height / 2;
 face.interactive=true;
-face.stage.on('pointerdown', onClick);
+face.on('pointerdown', onClick);
 function onClick()
 {
     xvel=Math.random()*6-3;
