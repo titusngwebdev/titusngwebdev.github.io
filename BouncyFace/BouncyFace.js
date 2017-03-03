@@ -10,8 +10,8 @@ var yvel=3;
 app.ticker.add(function(delta) {
     face.x += xvel * delta;
     face.y += yvel * delta;
-  if(face.x<0||face.x>app.renderer.width)
+  if(face.x<face.width/2||face.x>app.renderer.width-face.width/2)
     xvel*=-1;
-  if(face.y<0||face.y>app.renderer.height)
+  if(face.y<face.height/2||face.y>app.renderer.height-face.height/2)
     yvel*=-1;
 });
