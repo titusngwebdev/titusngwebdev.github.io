@@ -5,11 +5,13 @@ face.anchor.set(0.5);
 face.x = app.renderer.width / 2;
 face.y = app.renderer.height / 2;
 app.stage.addChild(face);
-var hello=2;
+var xvel=2;
+var yvel=3;
 app.ticker.add(function(delta) {
-    face.x += hello * delta;
+    face.x += xvel * delta;
+    face.y += yvel * delta;
   if(face.x<0||face.x>app.renderer.width)
-  {
-    hello*=-1;
-  }
+    xvel*=-1;
+  if(face.y<0||face.y>app.renderer.width)
+    yvel*=-1;
 });
