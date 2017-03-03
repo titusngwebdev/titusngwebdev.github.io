@@ -5,7 +5,7 @@ face.anchor.set(0.5);
 face.x = app.renderer.width / 2;
 face.y = app.renderer.height / 2;
 app.stage.addChild(face);
-var hello=1;
+var hello=2;
 app.ticker.add(function(delta) {
     face.x += hello * delta;
   if(face.x<0||face.x>app.renderer.width)
