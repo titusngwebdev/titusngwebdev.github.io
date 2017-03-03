@@ -5,8 +5,8 @@ face.anchor.set(0.5);
 face.x = app.renderer.width / 2;
 face.y = app.renderer.height / 2;
 app.stage.addChild(face);
-var xvel=Math.random()*3+1;
-var yvel=Math.random()*3+1;
+var xvel=Math.random()*6-3;
+var yvel=Math.random()*6-3;
 app.ticker.add(function(delta) {
     face.x += xvel * delta;
     face.y += yvel * delta;
@@ -15,12 +15,12 @@ app.ticker.add(function(delta) {
     if(face.y<face.height/2||face.y>app.renderer.height-face.height/2)
         yvel*=-1;
 });
-app.stage.interactive=true;
-app.stage.on('pointerdown', onClick);
+face.interactive=true;
+face.stage.on('pointerdown', onClick);
 function onClick()
 {
-    xvel=Math.random()*3+1;
-    yvel=Math.random()*3+1;
+    xvel=Math.random()*6-3;
+    yvel=Math.random()*6-3;
     face.x = app.renderer.width / 2;
     face.y = app.renderer.height / 2;
 }
