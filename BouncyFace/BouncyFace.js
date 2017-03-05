@@ -14,6 +14,8 @@ var xvel=Math.random()*6-3;
 var yvel=Math.random()*6-3;
 stage.addChild(face);
 
+move();
+
 function onClick()
 {
     xvel=Math.random()*6-3;
@@ -22,7 +24,6 @@ function onClick()
     face.y = renderer.height / 2;
 }
 
-move();
 function move() 
 {
     requestAnimationFrame(move);
