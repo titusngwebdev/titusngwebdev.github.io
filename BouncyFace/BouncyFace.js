@@ -1,4 +1,4 @@
-var renderer = PIXI.autoDetectRenderer(800,600)
+var renderer = PIXI.autoDetectRenderer(8000,6000)
 renderer.backGroundColor = 0x00FFFF;
 document.body.appendChild(renderer.view);
 
