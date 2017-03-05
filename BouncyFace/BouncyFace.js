@@ -9,16 +9,16 @@ face.x = renderer.view.width / 2;
 face.y = renderer.view.height / 2;
 face.interactive=true;
 face.on('pointerdown', onClick);
-var xvel=Math.random()*6-3;
-var yvel=Math.random()*6-3;
+var xvel=Math.random()*10-5;
+var yvel=Math.random()*10-5;
 stage.addChild(face);
 
 move();
 
 function onClick()
 {
-    xvel=Math.random()*6-3;
-    yvel=Math.random()*6-3;
+    xvel=Math.random()*10-5;
+    yvel=Math.random()*10-5;
     face.x = renderer.view.width / 2;
     face.y = renderer.view.height / 2;
 }
