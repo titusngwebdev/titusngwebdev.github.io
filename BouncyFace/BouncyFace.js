@@ -19,8 +19,8 @@ function onClick()
 {
     xvel=Math.random()*6-3;
     yvel=Math.random()*6-3;
-    face.x = renderer.width / 2;
-    face.y = renderer.height / 2;
+    face.x = renderer.view.width / 2;
+    face.y = renderer.view.height / 2;
 }
 
 function move() 
@@ -28,9 +28,9 @@ function move()
     requestAnimationFrame(move);
     face.x += xvel;
     face.y += yvel;
-    if(face.x<face.width/2||face.x>app.renderer.width-face.width/2)
+    if(face.x<face.width/2||face.x>renderer.view.width-face.width/2)
         xvel*=-1;
-    if(face.y<face.height/2||face.y>app.renderer.height-face.height/2)
+    if(face.y<face.height/2||face.y>renderer.view.height-face.height/2)
         yvel*=-1;
     renderer.render(stage);
 }
