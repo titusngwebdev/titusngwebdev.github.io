@@ -1,6 +1,6 @@
 var renderer = PIXI.autoDetectRenderer(800,600)
-document.body.appendChild(renderer.view);
 renderer.backGroundColor = 0x00FFFF;
+document.body.appendChild(renderer.view);
 
 var stage = new PIXI.Container()
 
