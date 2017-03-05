@@ -5,8 +5,8 @@ document.body.appendChild(renderer.view);
 
 var face = PIXI.Sprite.fromImage('assets/face.png');
 face.anchor.set(0.5);
-face.x = stage.width / 2;
-face.y = stage.height / 2;
+face.x = renderer.view.width / 2;
+face.y = renderer.view.height / 2;
 face.interactive=true;
 face.on('pointerdown', onClick);
 var xvel=Math.random()*6-3;
