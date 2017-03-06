@@ -19,8 +19,6 @@ function onClick()
 {
     xvel=Math.random()*8-4;
     yvel=Math.random()*8-4;
-    face.x = renderer.view.width / 2;
-    face.y = renderer.view.height / 2;
 }
 
 function move() 
